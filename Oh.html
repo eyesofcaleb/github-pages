@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js/aframe/build/aframe-ar.min.js"></script>
+  </head>
+  <body style="margin: 0; overflow: hidden;">
+    <a-scene embedded arjs="sourceType: webcam;">
+      
+      <!-- 텍스트는 위쪽(y: 2)에 위치시킴 -->
+      <a-entity 
+        position="0 2 0" 
+        rotation="-90 0 0"
+        text="value: OH!; align: center; color: red; width: 4;">
+      </a-entity>
+
+      <!-- 카메라 -->
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
